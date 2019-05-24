@@ -285,7 +285,7 @@ class St2(BotPlugin):
         self.chatbackend.post_message(whisper, message, user, channel, extra)
         return "Delivered to chat backend."
 
-    @webhook('/login/authenticate/<uuid>')
+    @webhook('/login/authenticate/<uuid>', raw=True)
     def login_auth(self, request, uuid):
         # WARNING: Sensitive security information will be loggged, uncomment only when necessary.
         # LOG.debug("Request: {}".format(request))
