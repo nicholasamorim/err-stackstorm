@@ -10,7 +10,7 @@ If you are familiar with Errbot and Stackstorm, this guide will get you up and r
 
    !repos install https://github.com/tkit/errbot-plugin-webserverconfiguration
 
-2. Paste the sample configuration below in Errbot's ``config.py`` file adjusting the URLs to match your Stackstorm instance and set up one of the authentication methods::
+2. Paste the sample configuration below in Errbot's ``config.py`` file adjusting the URLs to match your Stackstorm instance and set up one of the authentication methods.
 
 .. code-block:: python
 
@@ -44,7 +44,7 @@ If you are familiar with Errbot and Stackstorm, this guide will get you up and r
 
 5. Edit the ``chatops/actions/post_message.yaml`` file and replace ``chatops`` with ``errbot``.
 
-6. Set up an `action alias <https://docs.stackstorm.com/chatops/aliases.html>`_ on Stackstorm. See :ref:`action_alias` for more details.
+6. Set up an `action alias <https://docs.stackstorm.com/chatops/aliases.html>`_ on Stackstorm. See :ref:`action_aliases` for more details.
 
 7. Sending ``!st2help`` to your bot will list the available Stackstorms's aliases.
 
